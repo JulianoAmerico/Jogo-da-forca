@@ -33,10 +33,10 @@ public class Jogo {
 		Palavra palavra = dicionario.proximaPalavra();
 		char letra = ' ';
 		int chances = MAX_ERROS;
-
-		System.out.println("===================");
-		System.out.println("|| JOGO DA FORCA ||");
-		System.out.println("===================");
+		
+		//Novo jogo, exclui todos os elementos dos conjuntos.
+		letrasUtilizadas.clear();
+		palavra.getCaracteresEncontrados().clear();
 
 		System.out.println("A palavra tem " + palavra.tamanho() + " letras");
 
