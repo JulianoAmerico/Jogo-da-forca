@@ -146,4 +146,8 @@ public class Palavra {
 	public String getPalavraOriginal() {
 		return palavra;
 	}
+	
+	public Set<Character> getCaracteresEncontrados() {
+		return caracteresEncontrados;
+	}
 }
