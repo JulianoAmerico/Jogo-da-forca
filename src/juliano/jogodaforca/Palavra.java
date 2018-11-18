@@ -50,12 +50,12 @@ public class Palavra {
 		for (int i = 0; i < caracteresPalavra.length; i++) {
 
 			// Constrói as letras achadas pelo jogador.
-			if (caracteresEncontrados.contains(new Character(caracteresPalavra[i]))) {
-				palavraComCaracterSecreto.append(Character.valueOf(caracteresPalavra[i]) + " ");
+			if (caracteresEncontrados.contains(caracteresPalavra[i])) {
+				palavraComCaracterSecreto.append(caracteresPalavra[i] + " ");
 
 				continue;
 			}
-
+ 
 			// Esconde as letras não encontradas pelo jogador.
 			palavraComCaracterSecreto.append(Character.valueOf(CARACTER_SECRETO) + " ");
 		}
